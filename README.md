@@ -8,7 +8,7 @@ Bash-based extractor for `fastp` HTML QC reports that outputs a per-sample TSV s
 ## Usage
 1) Clone the repository
 ```
-git clone <REPO_URL>
+git clone https://github.com/miwipe/fastp_qc_data_extractor.git
 ```
 2) Enter the repository directory
 ```
