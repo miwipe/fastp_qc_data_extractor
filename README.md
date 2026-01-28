@@ -12,7 +12,7 @@ git clone https://github.com/miwipe/fastp_qc_data_extractor.git
 ```
 2) Enter the repository directory
 ```
-cd fastp_qc_data_extractor
+cd fastp_qc_data_extractor/bin/
 ```
 3) Make the script executable
 ```
