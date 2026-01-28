@@ -80,7 +80,7 @@ normalize_count() {
 }
 
 # --- header ---
-printf "sample\tsequencing_mode\tduplication_rate_pct\ttotal_reads_before_filtering\ttotal_reads_after_filtering\treads_too_short_pct\tlow_complexity_pct\tlow_quality_pct\tgc_content\tinsert_size_peak\n"
+printf "library_id\tsequencing_mode\tduplication_rate_pct\ttotal_reads_before_filtering\ttotal_reads_after_filtering\treads_too_short_pct\tlow_complexity_pct\tlow_quality_pct\tgc_content\tinsert_size_peak\n"
 
 # --- extract per file ---
 for f in "${files[@]}"; do
