@@ -80,7 +80,7 @@ normalize_count() {
 }
 
 # --- header ---
-printf "library_id\tfastp_sequencing_mode\tfastp_duplication_rate_pct\tfastp_total_reads_before_filtering\tfastp_total_reads_after_filtering\tfastp_reads_too_short_pct\tfastp_low_complexity_pct\tfastp_low_quality_pct\tfastp_gc_content\tfastp_insert_size_peak\n"
+printf "library_id\tfastp_sequencing_mode\tfastp_duplication_rate_pct\tfastp_total_reads_before\tfastp_total_reads_after\tfastp_reads_too_short_pct\tfastp_low_complexity_pct\tfastp_low_quality_pct\tfastp_gc_content\tfastp_insert_size_peak\n"
 
 # --- extract per file ---
 for f in "${files[@]}"; do
