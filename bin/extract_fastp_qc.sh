@@ -120,8 +120,8 @@ for f in "${files[@]}"; do
       | awk -F'%' '{print $1}'
   )"
 
-  # GC content: take 2nd occurrence (matches your NR%2==0 selection)
-  gc_content="$(nth_match "GC content" 2 "$f")"
+  # GC content: take 2nd occurrence (matches your NR%2==0 selection) and strip '%'
+  gc_content="$(nth_match "GC content" 2 "$f" | tr -d '%')"
 
   # Insert size peak: first occurrence
   insert_size_peak="$(nth_match "Insert size peak" 1 "$f")"
@@ -139,4 +139,3 @@ for f in "${files[@]}"; do
     "${gc_content:-}" \
     "${insert_size_peak:-}"
 done
-
